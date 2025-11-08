@@ -61,18 +61,20 @@ export const getVendors = () => api.get('/vendors')
 
 
 /* -------------------------------------------------------------------------- */
-/* 🏦 BANK MODULE (optional future use)                                      */
+/* 🏦 BANK MODULE                                                             */
 /* -------------------------------------------------------------------------- */
 
 // Bank Accounts
-export const getBankAccounts = () => api.get('/banks/accounts')
-export const getBankTransactions = () => api.get('/banks/transactions')
+export const getBankAccounts = (params = {}) => api.get('/bank/accounts', { params })
+export const createBankAccount = (payload) => api.post('/bank/accounts', payload)
+export const updateBankAccount = (id, payload) => api.put(`/bank/accounts/${id}`, payload)
+export const deleteBankAccount = (id) => api.delete(`/bank/accounts/${id}`)
 
-
-/* -------------------------------------------------------------------------- */
-/* 📊 REPORTS MODULE (optional future use)                                   */
-/* -------------------------------------------------------------------------- */
-export const getFinancialReports = () => api.get('/reports/financials')
+// Bank Transactions
+export const getBankTransactions = (params = {}) => api.get('/bank/transactions', { params })
+export const createBankTransaction = (payload) => api.post('/bank/transactions', payload)
+export const updateBankTransaction = (id, payload) => api.put(`/bank/transactions/${id}`, payload)
+export const deleteBankTransaction = (id) => api.delete(`/bank/transactions/${id}`)
 
 
 /* -------------------------------------------------------------------------- */
