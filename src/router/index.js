@@ -5,6 +5,7 @@ import SalesView from '../components/SalesView.vue'
 import PurchaseView from '../components/PurchaseView.vue'
 import BankView from '../components/BankView.vue'
 import ReportsView from '../components/ReportsView.vue'
+import FiscalManagementView from '../components/FiscalManagementView.vue'
 
 
 const routes = [
@@ -15,6 +16,7 @@ const routes = [
   { path: '/purchase', name: 'purchase', component: PurchaseView },
   { path: '/bank', name: 'bank', component: BankView },
   { path: '/reports', name: 'reports', component: ReportsView },
+  { path: '/fiscal-management', name: 'fiscal', component: FiscalManagementView }
 ]
 
 const router = createRouter({

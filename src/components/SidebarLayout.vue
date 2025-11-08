@@ -12,6 +12,7 @@
         <router-link to="/purchase" class="list-group-item list-group-item-action bg-dark text-white">🛒 Purchase</router-link>
         <router-link to="/bank" class="list-group-item list-group-item-action bg-dark text-white">🏦 Bank</router-link>
         <router-link to="/reports" class="list-group-item list-group-item-action bg-dark text-white">📈 Reports</router-link>
+        <router-link to="/fiscal-management" class="list-group-item list-group-item-action bg-dark text-white">📅 Fiscal Management</router-link>
       </div>
     </div>
 
