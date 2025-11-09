@@ -9,7 +9,7 @@
             <i class="bi bi-calendar2-week me-2"></i> Fiscal Management
           </h2>
           <p class="text-muted mb-0">
-            Manage your fiscal years and accounting periods efficiently.
+            Manage fiscal years and accounting periods.
           </p>
         </div>
         <nav aria-label="breadcrumb">
